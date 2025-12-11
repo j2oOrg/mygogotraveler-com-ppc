@@ -6,13 +6,13 @@ $casinos = [
     [
         'name' => 'Hurmio',
         'logo' => 'assets/images/hurmio-logo.png',
-        'rating' => 5.0,
+        'rating' => 5,
         'bonus' => '15 % päivittäinen käteispalautus',
         'features' => [
             '15 % päivittäinen käteispalautus',
             'Suomenkielinen palvelu',
             'Jatkuvaa cashbackia',
-            'Nopeat kotiutukset',
+            'Nopeat kotiutukset'
         ],
         'cta_text' => 'Pelaa Hurmiossa →',
         'cta_link' => 'https://att.trk.evelynarcade.com/click/1',
@@ -27,10 +27,11 @@ $casinos = [
         'free_spins' => '800 kierrosta',
         'features' => [
             '800 kierrosta ensitalletuksella',
-            'Jopa 15 % palautus',
+            'Jopa 15 % palautus'
         ],
         'cta_text' => 'Avaa Rullat →',
         'cta_link' => 'https://att.trk.evelynarcade.com/click/2',
+        'highlight' => false,
         'tag' => 'Mega-kierrokset',
     ],
     [
@@ -40,10 +41,11 @@ $casinos = [
         'bonus' => '15 % käteispalautus + kasinoralli',
         'features' => [
             '15 % käteispalautus',
-            'Kasinoralli',
+            'Kasinoralli'
         ],
         'cta_text' => 'Kokeile Jellonaa →',
         'cta_link' => 'https://att.trk.evelynarcade.com/click/3',
+        'highlight' => false,
         'tag' => 'Käteispalautus',
     ],
     [
@@ -54,12 +56,27 @@ $casinos = [
         'features' => [
             'Excellent selection of payment methods',
             '24/7 live chat',
-            'Low deposit options',
+            'Low deposit options'
         ],
         'cta_text' => 'Pelaa Kingmakerilla →',
         'cta_link' => 'https://att.trk.evelynarcade.com/click/4',
+        'highlight' => false,
         'tag' => '24/7 tuki',
     ],
+    [
+        'name' => 'New Casino',
+        'logo' => 'assets/images/casino-logo.png',
+        'rating' => 4,
+        'bonus' => 'Bonus description',
+        'features' => [
+            'Feature 1',
+            'Feature 2'
+        ],
+        'cta_text' => 'Play Now →',
+        'cta_link' => 'https://example.com/click/1',
+        'highlight' => false,
+        'tag' => 'New',
+    ]
 ];
 
 /**
@@ -84,7 +101,7 @@ function render_stars(float $rating): string
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EvelynArcade – Pay N Play -kasinot</title>
-    <meta name="description" content="EvelynArcaden kuratoimat suomalaiset Pay N Play -kasinot. Klikkaa ja pelaa ilman rekisteröitymistä.">
+    <meta name="description" content="Nämä ovat EvelynArcaden kuratoimia Pay N Play -kasinoita. Klikkaa ja siirry suoraan pelaamaan ilman rekisteröitymistä.">
     <style>
         :root {
             --bg: #0b1220;
