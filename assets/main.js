@@ -34,7 +34,7 @@ function initContactForm() {
     }
 
     form.reset();
-    status.textContent = "Message sent successfully! We’ll reply within 48 hours.";
+    status.textContent = "Message sent successfully! Weâll reply within 48 hours.";
     status.classList.add("success");
 
     setTimeout(() => {
@@ -128,7 +128,7 @@ function initModals() {
   document.querySelectorAll("[data-modal-close]").forEach((btn) =>
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      closeModal(btn.closest(".zlottour-modal"));
+      closeModal(btn.closest(".mygogotraveler-modal"));
     })
   );
 
