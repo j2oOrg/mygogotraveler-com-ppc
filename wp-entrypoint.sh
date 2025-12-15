@@ -88,9 +88,13 @@ if ! wp --path=/var/www/html --allow-root core is-installed; then
         --skip-email
 fi
 
-# Activate the bundled mygogotraveler theme by default (idempotent).
-if wp --path=/var/www/html --allow-root theme is-installed mygogotraveler; then
-    wp --path=/var/www/html --allow-root theme activate mygogotraveler
+# Activate the bundled theme by default (idempotent).
+THEME_SLUG=${WP_THEME_SLUG:-mygogotraveler}
+if wp --path=/var/www/html --allow-root theme is-installed "${THEME_SLUG}"; then
+    wp --path=/var/www/html --allow-root theme activate "${THEME_SLUG}" || true
+    # Belt-and-suspenders: set template/style options to the active slug to avoid fallback to TwentyTwenty-*.
+    wp --path=/var/www/html --allow-root option set template "${THEME_SLUG}" || true
+    wp --path=/var/www/html --allow-root option set stylesheet "${THEME_SLUG}" || true
 fi
 
 # Ensure site/home URLs are aligned with SITE_URL to avoid mixed-content issues.
