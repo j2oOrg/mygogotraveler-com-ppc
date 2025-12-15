@@ -6,24 +6,12 @@
       <span class="sr-only">mygogotraveler</span>
     </div>
 
-    <div class="footer-note-w0e3">
-      <h5 class="section-title-m3y2" style="margin-bottom:0.35rem; font-size:1.1rem;">Responsible play</h5>
+    <div class="footer-note-w0e3" style="text-align:center;">
       <p class="section-sub-p0c6" style="margin:0;">
-        mygogotraveler is for light, social casino style fun for adults <strong>18+</strong>. No cash, no prizes—just entertainment.
-        Take breaks, set your own pace, and keep it balanced.
+        © 2025 mygogotraveler Association. All rights reserved. | Licence #465790<br>
+        Please play responsibly. Must be 18+ to participate.
       </p>
     </div>
-
-    <ul class="footer-list-z1t5">
-      <li><a href="<?php echo esc_url( home_url('/') ); ?>">Home</a></li>
-      <li><a href="<?php echo esc_url( home_url('/play') ); ?>">Play</a></li>
-      <li><a href="<?php echo esc_url( home_url('/#contact') ); ?>">Contact</a></li>
-      <li><a href="<?php echo esc_url( home_url('/disclaimer') ); ?>">Disclaimer</a></li>
-      <li><a href="<?php echo esc_url( home_url('/privacy-policy') ); ?>">Privacy Policy</a></li>
-      <li><a href="<?php echo esc_url( home_url('/terms-and-conditions') ); ?>">Terms &amp; Conditions</a></li>
-    </ul>
-
-    <p class="footer-copy-l5u7">© <span data-year></span> mygogotraveler</p>
   </div>
 </footer>
 

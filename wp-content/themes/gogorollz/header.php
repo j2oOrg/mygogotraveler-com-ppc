@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="mygogotraveler — Free-to-play social casino experiences, zero payouts">
+  <meta name="description" content="mygogotraveler — Licensed raffle with cash prizes, responsible play, and clear rules.">
   <link rel="icon" href="<?php echo esc_url( home_url('/favicon.ico') ); ?>">
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( home_url('/apple-touch-icon.png') ); ?>">
   <?php wp_head(); ?>
@@ -11,25 +11,16 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 
-<div class="alert-strip-f2m7">
-  <div class="shell-wrap-z4m2 alert-inner-v7x1">
-    <span class="alert-pill-x6c4">18+</span>
-    <span>mygogotraveler is a free-to-play social casino style experience. No real-money gambling or prizes. 18+ only. Please play responsibly.</span>
-  </div>
-</div>
-
 <?php
   $current = '';
   if (is_front_page()) {
       $current = 'home';
-  } elseif (is_page('play')) {
-      $current = 'play';
-  } elseif (is_page('disclaimer')) {
-      $current = 'disclaimer';
-  } elseif (is_page('privacy-policy')) {
-      $current = 'privacy';
-  } elseif (is_page('terms-and-conditions')) {
-      $current = 'terms';
+  } elseif (is_page('prizes')) {
+      $current = 'prizes';
+  } elseif (is_page('rules')) {
+      $current = 'rules';
+  } elseif (is_page('faq')) {
+      $current = 'faq';
   }
   $brand = get_theme_file_uri('/assets/images/img.png');
 ?>
@@ -50,22 +41,25 @@
           <a class="nav-link-u4e7<?php echo $current === 'home' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/#home') ); ?>">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'play' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/play') ); ?>">Play</a>
+          <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#impact') ); ?>">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#how') ); ?>">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-u4e7<?php echo $current === 'prizes' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/prizes') ); ?>">Prizes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-u4e7<?php echo $current === 'rules' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/rules') ); ?>">Rules</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#winners') ); ?>">Winners</a>
         </li>
         <li class="nav-item">
           <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#contact') ); ?>">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'disclaimer' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/disclaimer') ); ?>">Disclaimer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'privacy' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/privacy-policy') ); ?>">Privacy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'terms' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/terms-and-conditions') ); ?>">Terms</a>
-        </li>
-        <li class="nav-item ms-lg-2">
-          <a class="btn-ghost-r4d0" href="<?php echo esc_url( home_url('/play') ); ?>">Start a session</a>
+          <a class="nav-link-u4e7<?php echo $current === 'faq' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/faq') ); ?>">FAQ</a>
         </li>
       </ul>
     </div>
