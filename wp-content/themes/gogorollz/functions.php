@@ -22,6 +22,15 @@ add_action('wp_enqueue_scripts', function () {
         null
     );
 
+    if (is_front_page()) {
+        wp_enqueue_style(
+            'mygogotraveler-home-fonts',
+            'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap',
+            [],
+            null
+        );
+    }
+
     wp_enqueue_style(
         'mygogotraveler-fontawesome',
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css',
@@ -42,6 +51,15 @@ add_action('wp_enqueue_scripts', function () {
         ['mygogotraveler-bootstrap'],
         $theme_version
     );
+
+    if (is_front_page()) {
+        wp_enqueue_style(
+            'mygogotraveler-home',
+            get_theme_file_uri('/assets/css/front-page.css'),
+            ['mygogotraveler-site'],
+            $theme_version
+        );
+    }
 
     wp_enqueue_script(
         'mygogotraveler-bootstrap',
