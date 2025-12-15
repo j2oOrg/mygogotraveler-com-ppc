@@ -34,7 +34,7 @@ function initContactForm() {
     }
 
     form.reset();
-    status.textContent = "Message sent successfully! Weâll reply within 48 hours.";
+    status.textContent = "Message sent successfully! We’ll reply within 48 hours.";
     status.classList.add("success");
 
     setTimeout(() => {
