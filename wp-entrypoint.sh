@@ -89,7 +89,7 @@ if ! wp --path=/var/www/html --allow-root core is-installed; then
 fi
 
 # Activate the bundled theme by default (idempotent).
-THEME_SLUG=${WP_THEME_SLUG:-mygogotraveler}
+THEME_SLUG=${WP_THEME_SLUG:-mytheme}
 if wp --path=/var/www/html --allow-root theme is-installed "${THEME_SLUG}"; then
     wp --path=/var/www/html --allow-root theme activate "${THEME_SLUG}" || true
     # Belt-and-suspenders: set template/style options to the active slug to avoid fallback to TwentyTwenty-*.
