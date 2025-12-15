@@ -128,7 +128,7 @@ function initModals() {
   document.querySelectorAll("[data-modal-close]").forEach((btn) =>
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      closeModal(btn.closest(".zlottour-modal"));
+      closeModal(btn.closest(".mygogotraveler-modal"));
     })
   );
 
