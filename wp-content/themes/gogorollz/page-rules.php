@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Rules
  * Rules page template.
  */
 get_header();

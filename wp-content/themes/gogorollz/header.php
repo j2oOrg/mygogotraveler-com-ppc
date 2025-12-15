@@ -23,6 +23,12 @@
       $current = 'faq';
   }
   $brand = get_theme_file_uri('/assets/images/img.png');
+  $faq_page = get_page_by_path('faq');
+  $rules_page = get_page_by_path('rules');
+  $prizes_page = get_page_by_path('prizes');
+  $faq_link = $faq_page ? get_permalink($faq_page) : home_url('/faq');
+  $rules_link = $rules_page ? get_permalink($rules_page) : home_url('/rules');
+  $prizes_link = $prizes_page ? get_permalink($prizes_page) : home_url('/prizes');
 ?>
 
 <nav class="navbar navbar-expand-lg nav-rail-q5h8">
@@ -47,10 +53,10 @@
           <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#how') ); ?>">How It Works</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'prizes' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/prizes') ); ?>">Prizes</a>
+          <a class="nav-link-u4e7<?php echo $current === 'prizes' ? ' active' : ''; ?>" href="<?php echo esc_url( $prizes_link ); ?>">Prizes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'rules' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/rules') ); ?>">Rules</a>
+          <a class="nav-link-u4e7<?php echo $current === 'rules' ? ' active' : ''; ?>" href="<?php echo esc_url( $rules_link ); ?>">Rules</a>
         </li>
         <li class="nav-item">
           <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#winners') ); ?>">Winners</a>
@@ -59,7 +65,7 @@
           <a class="nav-link-u4e7" href="<?php echo esc_url( home_url('/#contact') ); ?>">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link-u4e7<?php echo $current === 'faq' ? ' active' : ''; ?>" href="<?php echo esc_url( home_url('/faq') ); ?>">FAQ</a>
+          <a class="nav-link-u4e7<?php echo $current === 'faq' ? ' active' : ''; ?>" href="<?php echo esc_url( $faq_link ); ?>">FAQ</a>
         </li>
       </ul>
     </div>

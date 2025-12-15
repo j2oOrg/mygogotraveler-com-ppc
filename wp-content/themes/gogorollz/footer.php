@@ -9,7 +9,8 @@
     <div class="footer-note-w0e3" style="text-align:center;">
       <p class="section-sub-p0c6" style="margin:0;">
         © 2025 mygogotraveler Association. All rights reserved. | Licence #465790<br>
-        Please play responsibly. Must be 18+ to participate.
+        Please play responsibly. Must be 18+ to participate.<br>
+        <a href="<?php echo esc_url( home_url('/privacy-policy') ); ?>" class="link-accent-m8q5">Privacy Policy</a>
       </p>
     </div>
   </div>
