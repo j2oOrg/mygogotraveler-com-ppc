@@ -122,19 +122,6 @@ if [ -n "${SITE_URL}" ]; then
     wp --path=/var/www/html --allow-root option update home "${SITE_URL}" || true
 fi
 
-# Install and activate FileBird plugin (idempotent, overridable).
-if [ "${WP_INSTALL_FILEBIRD:-1}" = "1" ]; then
-    echo "Ensuring FileBird plugin is installed..."
-    if ! wp --path=/var/www/html --allow-root plugin is-installed filebird; then
-        if ! wp --path=/var/www/html --allow-root plugin install filebird --activate; then
-            echo "Warning: FileBird plugin installation failed; continuing without it." >&2
-        fi
-    else
-        wp --path=/var/www/html --allow-root plugin activate filebird || \
-            echo "Warning: could not activate FileBird plugin." >&2
-    fi
-fi
-
 # Install/activate plugins dropped into ${PLUGIN_DROP_DIR} (zip files or folders).
 if [ -d "${PLUGIN_DROP_DIR}" ]; then
     echo "Processing plugins in ${PLUGIN_DROP_DIR}..."
@@ -156,6 +143,22 @@ if [ -d "${PLUGIN_DROP_DIR}" ]; then
     done
     shopt -u nullglob
 fi
+
+
+# Install and activate FileBird plugin (idempotent, overridable).
+if [ "${WP_INSTALL_FILEBIRD:-1}" = "1" ]; then
+    echo "Ensuring FileBird plugin is installed..."
+    if ! wp --path=/var/www/html --allow-root plugin is-installed filebird; then
+        if ! wp --path=/var/www/html --allow-root plugin install filebird --activate; then
+            echo "Warning: FileBird plugin installation failed; continuing without it." >&2
+        fi
+    else
+        wp --path=/var/www/html --allow-root plugin activate filebird || \
+            echo "Warning: could not activate FileBird plugin." >&2
+    fi
+fi
+
+
 
 # Hand off to the original WordPress entrypoint (starts Apache/PHP).
 exec docker-entrypoint.sh "$@"
