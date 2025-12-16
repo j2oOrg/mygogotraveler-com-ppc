@@ -28,7 +28,7 @@ get_header();
         <h2>1. Eligibility</h2>
         <p>To participate, you must:</p>
         <ul>
-          <li>Be 18 years of age or older at the time of ticket purchase.</li>
+            <li>Be 19 years of age or older at the time of ticket purchase.</li>
           <li>Be a resident of Alberta, Canada.</li>
           <li>Not be an employee or immediate family member of Zlottour Raffle (licensee).</li>
           <li>Comply with applicable Alberta Gaming, Liquor and Cannabis regulations.</li>

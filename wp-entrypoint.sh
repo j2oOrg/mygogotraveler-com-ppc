@@ -146,7 +146,7 @@ fi
 
 
 # Install and activate FileBird plugin (idempotent, overridable).
-if [ "${WP_INSTALL_FILEBIRD:-1}" = "1" ]; then
+if [ "${WP_INSTALL_FILEBIRD:-1}" = "0" ]; then
     echo "Ensuring FileBird plugin is installed..."
     if ! wp --path=/var/www/html --allow-root plugin is-installed filebird; then
         if ! wp --path=/var/www/html --allow-root plugin install filebird --activate; then

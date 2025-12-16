@@ -25,7 +25,7 @@ get_header();
 
       <article class="faq-card-n8k5">
         <h3>Who can buy a ticket?</h3>
-        <p>You must be 18+ and a resident of Alberta, Canada. Employees and immediate family of the licensee are not eligible.</p>
+        <p>You must be 19+ and a resident of Alberta, Canada. Employees and immediate family of the licensee are not eligible.</p>
       </article>
 
       <article class="faq-card-n8k5">
