@@ -16,7 +16,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
           <span class="hero-prize">$3,780 Current Licensed Draw</span>
           <span class="hero-prize-sub">995 tickets • $10 each • Licence #465790</span>
         </div>
-        <p class="hero-sub">mygogotraveler is a licensed raffle experience with real cash prizes. Enter the current draw, track the countdown, and see winners posted after the official date.</p>
+        <p class="hero-sub">Zlottour is a licensed raffle experience with real cash prizes. Enter the current draw, track the countdown, and see winners posted after the official date.</p>
         <div class="countdown-card">
           <p class="countdown-title">Draw date: December 26, 2025</p>
           <div class="countdown" id="countdown">
@@ -39,7 +39,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
 
       <div class="hero-visual">
         <div class="halo"></div>
-        <img src="<?php echo esc_url( $hero_image ); ?>" alt="mygogotraveler Raffle hero">
+        <img src="<?php echo esc_url( $hero_image ); ?>" alt="Zlottour Raffle hero">
         <span class="hero-label"><i class="fa-solid fa-circle-info"></i> Real cash prizes</span>
       </div>
     </div>
@@ -198,7 +198,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
       <div class="contact-grid">
         <div class="contact-card">
           <h3>Message us</h3>
-          <p>Email: <a href="mailto:support@mygogotraveler.com">support@mygogotraveler.com</a></p>
+          <p>Email: <a href="mailto:support@zlottour.com">support@zlottour.com</a></p>
           <p>Hours: Mon–Fri, 9:00 AM – 5:00 PM (MT)</p>
           <p>Response time: within 1–2 business days</p>
         </div>
@@ -219,7 +219,7 @@ $hero_image = get_theme_file_uri('/assets/images/herobackground02.png');
   <div class="item"><i class="fa-solid fa-bolt"></i> Fast Checkout</div>
 </div>
 
-<div class="mygogotraveler-modal" id="signupModal" aria-hidden="true">
+<div class="zlottour-modal" id="signupModal" aria-hidden="true">
   <div class="modal-card">
     <button class="modal-close" type="button" data-modal-close aria-label="Close form"><i class="fa-solid fa-xmark"></i></button>
     <h3>Ticket Purchase Inquiry</h3>

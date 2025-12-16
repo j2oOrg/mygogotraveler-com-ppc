@@ -11,7 +11,7 @@ get_header();
     <div class="shell-wrap-z4m2">
       <p class="eyebrow-t8k9">Need answers?</p>
       <h1 class="section-title-m3y2" style="font-size:2.5rem; margin-bottom:0.35rem;">Frequently Asked Questions</h1>
-      <p class="section-sub-p0c6" style="max-width:860px;">Answers to common questions about the mygogotraveler Raffle.</p>
+      <p class="section-sub-p0c6" style="max-width:860px;">Answers to common questions about the Zlottour Raffle.</p>
       <p class="faq-meta-u6e4">Licence #465790 • Draw: Dec 26, 2025 • 995 tickets at $10</p>
     </div>
   </section>
@@ -70,7 +70,7 @@ get_header();
 
       <article class="faq-card-n8k5">
         <h3>What if I have more questions?</h3>
-        <p>Reach out via <a href="mailto:support@mygogotraveler.com" class="link-accent-m8q5">support@mygogotraveler.com</a> or use the <a href="<?php echo esc_url( home_url('/#contact') ); ?>">contact section</a> on the homepage for assistance.</p>
+        <p>Reach out via <a href="mailto:support@zlottour.com" class="link-accent-m8q5">support@zlottour.com</a> or use the <a href="<?php echo esc_url( home_url('/#contact') ); ?>">contact section</a> on the homepage for assistance.</p>
       </article>
     </div>
   </section>
