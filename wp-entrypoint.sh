@@ -89,13 +89,32 @@ if ! wp --path=/var/www/html --allow-root core is-installed; then
 fi
 
 # Activate the bundled theme by default (idempotent).
-THEME_SLUG=${WP_THEME_SLUG:-mytheme}
+THEME_SLUG=${WP_THEME_SLUG:-raffle}
 if wp --path=/var/www/html --allow-root theme is-installed "${THEME_SLUG}"; then
     wp --path=/var/www/html --allow-root theme activate "${THEME_SLUG}" || true
     # Belt-and-suspenders: set template/style options to the active slug to avoid fallback to TwentyTwenty-*.
     wp --path=/var/www/html --allow-root option set template "${THEME_SLUG}" || true
     wp --path=/var/www/html --allow-root option set stylesheet "${THEME_SLUG}" || true
 fi
+
+# Ensure key pages exist and have the correct templates.
+ensure_page() {
+  local slug="$1"
+  local title="$2"
+  local template="$3"
+  local id
+  id=$(wp --path=/var/www/html --allow-root post list --post_type=page --name="$slug" --format=ids)
+  if [ -z "$id" ]; then
+    id=$(wp --path=/var/www/html --allow-root post create --post_type=page --post_status=publish --post_title="$title" --post_name="$slug" --porcelain)
+  fi
+  if [ -n "$template" ]; then
+    wp --path=/var/www/html --allow-root post meta update "$id" _wp_page_template "$template" || true
+  fi
+}
+
+ensure_page "rules" "Rules" "page-rules.php"
+ensure_page "faq" "FAQ" "page-faq.php"
+ensure_page "privacy-policy" "Privacy Policy" "page-privacy-policy.php"
 
 # Ensure site/home URLs are aligned with SITE_URL to avoid mixed-content issues.
 if [ -n "${SITE_URL}" ]; then
