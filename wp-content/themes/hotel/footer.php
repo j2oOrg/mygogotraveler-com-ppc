@@ -6,7 +6,7 @@
       <p class="muted">English-language concierge for gaming, dining, and events.</p>
       <ul class="contact-list">
         <li><i class="fa-solid fa-phone"></i> <a href="tel:+358600550124">+358 600 550 124</a></li>
-        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@casinohotel.fi">info@casinohotel.fi</a></li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@mygogotraveler.com">info@mygogotraveler.com</a></li>
         <li><i class="fa-solid fa-location-dot"></i> <a href="https://maps.google.com/?q=Casino+Helsinki" target="_blank" rel="noopener noreferrer">Mikonkatu 19, Helsinki</a></li>
       </ul>
     </div>

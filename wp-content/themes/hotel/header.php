@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <?php
-  $brand = get_theme_file_uri('/assets/images/brand.svg');
+  $brand = get_theme_file_uri('/assets/images/img.png');
   $dining_page = get_page_by_path('dining');
   $dining_link = $dining_page ? get_permalink($dining_page) : home_url('/dining');
 ?>
@@ -18,8 +18,8 @@
 <header class="site-header">
   <div class="shell header-bar">
     <a class="brand" href="<?php echo esc_url( home_url('/') ); ?>">
-      <img src="<?php echo esc_url( $brand ); ?>" alt="Casino Hotel logo">
-      <span class="sr-only">Casino Hotel</span>
+      <img src="<?php echo esc_url( $brand ); ?>" alt="mygogotraveler logo">
+      <span class="sr-only">mygogotraveler</span>
     </a>
 
     <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
