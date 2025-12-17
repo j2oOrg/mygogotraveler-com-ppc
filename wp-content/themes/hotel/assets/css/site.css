@@ -296,6 +296,16 @@ p {
   color: var(--accent);
 }
 
+.panel-list__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.8rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
 .section-block {
   padding: 2.4rem 0;
 }

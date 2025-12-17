@@ -11,6 +11,8 @@
 <?php wp_body_open(); ?>
 <?php
   $brand = get_theme_file_uri('/assets/images/brand.svg');
+  $dining_page = get_page_by_path('dining');
+  $dining_link = $dining_page ? get_permalink($dining_page) : home_url('/dining');
 ?>
 
 <header class="site-header">
@@ -30,7 +32,7 @@
         <li><a href="<?php echo esc_url( home_url('/#home') ); ?>"><?php esc_html_e('Home', 'hotel'); ?></a></li>
         <li><a href="<?php echo esc_url( home_url('/#casino') ); ?>"><?php esc_html_e('Casino', 'hotel'); ?></a></li>
         <li><a href="<?php echo esc_url( home_url('/#games') ); ?>"><?php esc_html_e('Games', 'hotel'); ?></a></li>
-        <li><a href="<?php echo esc_url( home_url('/#dining') ); ?>"><?php esc_html_e('Dining', 'hotel'); ?></a></li>
+        <li><a href="<?php echo esc_url( $dining_link ); ?>"><?php esc_html_e('Dining', 'hotel'); ?></a></li>
         <li><a href="<?php echo esc_url( home_url('/#events') ); ?>"><?php esc_html_e('Events', 'hotel'); ?></a></li>
         <li><a href="<?php echo esc_url( home_url('/#poker') ); ?>"><?php esc_html_e('Poker', 'hotel'); ?></a></li>
         <li><a href="<?php echo esc_url( home_url('/#visit') ); ?>"><?php esc_html_e('Visit', 'hotel'); ?></a></li>
