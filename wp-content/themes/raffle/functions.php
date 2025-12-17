@@ -1,6 +1,6 @@
 <?php
 /**
- * zlottour theme setup and assets.
+ * mygogotraveler theme setup and assets.
  */
 
 add_action('after_setup_theme', function () {
@@ -8,7 +8,7 @@ add_action('after_setup_theme', function () {
     add_theme_support('post-thumbnails');
     add_theme_support('html5', ['search-form', 'comment-form', 'comment-list', 'gallery', 'caption', 'style', 'script']);
     register_nav_menus([
-        'primary' => __('Primary Menu', 'zlottour'),
+        'primary' => __('Primary Menu', 'mygogotraveler'),
     ]);
 });
 
@@ -16,7 +16,7 @@ add_action('wp_enqueue_scripts', function () {
     $theme_version = wp_get_theme()->get('Version');
 
     wp_enqueue_style(
-        'zlottour-google-fonts',
+        'mygogotraveler-google-fonts',
         'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap',
         [],
         null
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
 
     if (is_front_page()) {
         wp_enqueue_style(
-            'zlottour-home-fonts',
+            'mygogotraveler-home-fonts',
             'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap',
             [],
             null
@@ -32,37 +32,37 @@ add_action('wp_enqueue_scripts', function () {
     }
 
     wp_enqueue_style(
-        'zlottour-fontawesome',
+        'mygogotraveler-fontawesome',
         'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css',
         [],
         '6.5.2'
     );
 
     wp_enqueue_style(
-        'zlottour-bootstrap',
+        'mygogotraveler-bootstrap',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
         [],
         '5.3.3'
     );
 
     wp_enqueue_style(
-        'zlottour-site',
+        'mygogotraveler-site',
         get_theme_file_uri('/assets/css/site.css'),
-        ['zlottour-bootstrap'],
+        ['mygogotraveler-bootstrap'],
         $theme_version
     );
 
     if (is_front_page()) {
         wp_enqueue_style(
-            'zlottour-home',
+            'mygogotraveler-home',
             get_theme_file_uri('/assets/css/front-page.css'),
-            ['zlottour-site'],
+            ['mygogotraveler-site'],
             $theme_version
         );
     }
 
     wp_enqueue_script(
-        'zlottour-bootstrap',
+        'mygogotraveler-bootstrap',
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
         [],
         '5.3.3',
@@ -70,7 +70,7 @@ add_action('wp_enqueue_scripts', function () {
     );
 
     wp_enqueue_script(
-        'zlottour-main',
+        'mygogotraveler-main',
         get_theme_file_uri('/assets/js/main.js'),
         [],
         $theme_version,

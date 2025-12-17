@@ -14,7 +14,7 @@ get_header();
           <?php the_content(); ?>
         </div>
       <?php endwhile; else : ?>
-        <h1 class="section-title-m3y2">zlottour</h1>
+        <h1 class="section-title-m3y2">mygogotraveler</h1>
         <p class="section-sub-p0c6">Create a Home page and set it as the static front page to load the full landing experience.</p>
       <?php endif; ?>
     </div>

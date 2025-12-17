@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="zlottour — Licensed raffle with cash prizes, responsible play, and clear rules.">
+  <meta name="description" content="mygogotraveler — Licensed raffle with cash prizes, responsible play, and clear rules.">
   <link rel="icon" href="<?php echo esc_url( home_url('/favicon.ico') ); ?>">
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( home_url('/apple-touch-icon.png') ); ?>">
   <?php wp_head(); ?>
@@ -34,10 +34,10 @@
 <nav class="navbar navbar-expand-lg nav-rail-q5h8">
   <div class="shell-wrap-z4m2 d-flex align-items-center justify-content-between">
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>">
-      <img class="brand-logo-u8b4" src="<?php echo esc_url( $brand ); ?>" alt="zlottour logo">
-      <span class="sr-only">zlottour</span>
+      <img class="brand-logo-u8b4" src="<?php echo esc_url( $brand ); ?>" alt="mygogotraveler logo">
+      <span class="sr-only">mygogotraveler</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'zlottour'); ?>">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'mygogotraveler'); ?>">
       <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
     </button>
 

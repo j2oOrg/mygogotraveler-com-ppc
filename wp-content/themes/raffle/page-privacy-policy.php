@@ -130,8 +130,8 @@ get_header();
           <p><strong>Alberta Conservation Association</strong><br>
           Game Bird Hunt Site 2025 Raffle<br>
           Licence #465790</p>
-          <p><strong>Website:</strong> <a href="<?php echo esc_url( home_url('/') ); ?>">zlottour.com</a><br>
-          <strong>Email:</strong> <a href="mailto:support@zlottour.com">support@zlottour.com</a></p>
+          <p><strong>Website:</strong> <a href="<?php echo esc_url( home_url('/') ); ?>">mygogotraveler.com</a><br>
+          <strong>Email:</strong> <a href="mailto:support@mygogotraveler.com">support@mygogotraveler.com</a></p>
           <p>Please visit our <a href="<?php echo esc_url( home_url('/#contact') ); ?>">Contact section</a> for more ways to reach us.</p>
         </div>
 

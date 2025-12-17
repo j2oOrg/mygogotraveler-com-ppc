@@ -13,11 +13,11 @@ if [ -f "$CONFIG_FILE" ]; then
     # shellcheck disable=SC1090
     . "$CONFIG_FILE"
 fi
-SITE_TITLE=${WP_SITE_TITLE:-${SITE_TITLE:-zlottour}}
+SITE_TITLE=${WP_SITE_TITLE:-${SITE_TITLE:-mygogotraveler}}
 ADMIN_USER=${WP_ADMIN_USER:-${ADMIN_USER:-admin}}
 ADMIN_PASSWORD=${WP_ADMIN_PASSWORD:-${ADMIN_PASSWORD:-changeme}}
 ADMIN_EMAIL=${WP_ADMIN_EMAIL:-${ADMIN_EMAIL:-admin@example.com}}
-SITE_URL=${WP_SITE_URL:-${SITE_URL:-https://zlottour.com}}
+SITE_URL=${WP_SITE_URL:-${SITE_URL:-https://mygogotraveler.com}}
 PLUGIN_DROP_DIR=${WP_PLUGIN_DROP_DIR:-/usr/src/wordpress/wp-plugins}
 
 # Initialize MariaDB data directory on first run.

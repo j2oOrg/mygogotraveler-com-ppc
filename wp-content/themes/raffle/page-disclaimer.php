@@ -10,7 +10,7 @@ get_header();
     <div class="notice-box-a9r0">
       <h2 class="section-title-m3y2">Disclaimer</h2>
       <h3 class="subheading-c8q2">1. Purpose</h3>
-      <p class="section-sub-p0c6"><strong>zlottour</strong> is an entertainment-only shell for social casino style browser experiences. There are no deposits, wagers, cashouts, or prizes anywhere on this site.</p>
+      <p class="section-sub-p0c6"><strong>mygogotraveler</strong> is an entertainment-only shell for social casino style browser experiences. There are no deposits, wagers, cashouts, or prizes anywhere on this site.</p>
       <h3 class="subheading-c8q2">2. Audience</h3>
       <p class="section-sub-p0c6">Use is restricted to adults aged 19+. If you are not of age in your region, please do not access or share this site.</p>
       <h3 class="subheading-c8q2">3. No advice</h3>
