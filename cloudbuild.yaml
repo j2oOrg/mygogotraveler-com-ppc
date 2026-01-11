@@ -114,6 +114,24 @@ steps:
                       service:
                         name: ${_APP_NAME}
                         port: { number: ${_SERVICE_PORT} }
+            - host: site.${_HOSTNAME}
+              http:
+                paths:
+                  - path: /
+                    pathType: Prefix
+                    backend:
+                      service:
+                        name: ${_APP_NAME}
+                        port: { number: ${_SERVICE_PORT} }
+            - host: segment.${_HOSTNAME}
+              http:
+                paths:
+                  - path: /
+                    pathType: Prefix
+                    backend:
+                      service:
+                        name: ${_APP_NAME}
+                        port: { number: ${_SERVICE_PORT} }
             - host: ${_ALT_HOSTNAME}
               http:
                 paths:
