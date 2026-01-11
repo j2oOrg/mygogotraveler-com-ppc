@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Allmänna villkor - Helsinki Sum Hotel</title>
+    <meta
+      name="description"
+      content="Allmänna villkor för bokning och vistelse på Helsinki Sum Hotel. Läs om betalning, avbokning och ansvar."
+    />
+    <style>
+      :root {
+        --hs-terms-ink: #18222b;
+        --hs-terms-paper: #f4f1ea;
+        --hs-terms-mocha: #4f5a63;
+        --hs-terms-copper: #c48b3a;
+        --hs-terms-olive: #6b7b6a;
+        --hs-terms-shadow: 0 16px 30px rgba(24, 34, 43, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        color: var(--hs-terms-ink);
+        background: linear-gradient(170deg, #f6f2eb 0%, #eef2ed 50%, #d8ddd9 100%);
+      }
+
+      .hs-terms-frame {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hs-terms-frame::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle at 10% 15%, rgba(196, 139, 58, 0.2), transparent 40%),
+          radial-gradient(circle at 90% 10%, rgba(107, 123, 106, 0.14), transparent 45%);
+        pointer-events: none;
+      }
+
+      .hs-terms-header {
+        background: rgba(244, 241, 234, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(24, 34, 43, 0.1);
+      }
+
+      .hs-terms-topline {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .hs-terms-name {
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 1.05rem;
+      }
+
+      .hs-terms-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.95rem;
+      }
+
+      .hs-terms-nav a {
+        text-decoration: none;
+        color: var(--hs-terms-ink);
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
+
+      .hs-terms-nav a:hover {
+        background: var(--hs-terms-olive);
+        color: #fff;
+      }
+
+      .hs-terms-main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 64px 24px 80px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hs-terms-card {
+        background: var(--hs-terms-paper);
+        padding: 34px;
+        border-radius: 24px;
+        box-shadow: var(--hs-terms-shadow);
+        animation: hs-terms-fade 0.8s ease forwards;
+      }
+
+      .hs-terms-card h1 {
+        margin-top: 0;
+        font-size: 2rem;
+      }
+
+      .hs-terms-card h2 {
+        margin-top: 28px;
+        font-size: 1.2rem;
+      }
+
+      .hs-terms-card p {
+        line-height: 1.7;
+        color: var(--hs-terms-mocha);
+      }
+
+      .hs-terms-list {
+        padding-left: 18px;
+        color: var(--hs-terms-mocha);
+        line-height: 1.6;
+      }
+
+      .hs-terms-highlight {
+        background: rgba(196, 139, 58, 0.2);
+        padding: 16px 18px;
+        border-radius: 18px;
+        margin-top: 20px;
+      }
+
+      .hs-terms-footer {
+        background: #18222b;
+        color: #f4f1ea;
+        padding: 32px 24px;
+      }
+
+      .hs-terms-footer-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        gap: 12px;
+        font-size: 0.95rem;
+      }
+
+      .hs-terms-footer a {
+        color: #f4f1ea;
+        text-decoration: none;
+      }
+
+      @keyframes hs-terms-fade {
+        from {
+          opacity: 0;
+          transform: translateY(16px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hs-terms-frame">
+      <header class="hs-terms-header">
+        <div class="hs-terms-topline">
+          <div class="hs-terms-name">Helsinki Sum Hotel</div>
+          <nav class="hs-terms-nav">
+            <a href="index.html">Hem</a>
+            <a href="rooms.html">Rumstyper</a>
+            <a href="restaurant.html">Restaurang</a>
+            <a href="terms.html">Villkor</a>
+            <a href="privacy.html">Integritet</a>
+            <a href="disclaimer.html">Ansvar</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="hs-terms-main">
+        <article class="hs-terms-card">
+          <h1>Allmänna villkor</h1>
+          <p>
+            Dessa villkor gäller för bokningar och vistelser på Helsinki Sum Hotel. Genom att boka
+            rum hos oss bekräftar du att du tagit del av och accepterar dessa villkor. För frågor
+            eller förtydliganden är du alltid välkommen att kontakta receptionen.
+          </p>
+          <p><strong>Senast uppdaterad:</strong> 12 januari 2026</p>
+
+          <h2>Bokning och bekräftelse</h2>
+          <p>
+            En bokning är bindande när du får en skriftlig bekräftelse från oss. Vi kan reservera
+            rum utan garanti i upp till 24 timmar, därefter släpps rummet automatiskt om ingen
+            bekräftelse inkommit.
+          </p>
+
+          <h2>Betalning</h2>
+          <p>
+            Betalning sker vid incheckning om inget annat avtalats. Vid vissa kampanjer eller
+            specialbokningar kan förskottsbetalning krävas. Vi accepterar de vanligaste
+            betalkorten.
+          </p>
+          <p>
+            Vi tar inte emot betalningar via telefon eller på webbplatsen. All betalning sker på
+            plats i samband med att vistelsen är avslutad.
+          </p>
+
+          <h2>Avbokning och ändring</h2>
+          <ul class="hs-terms-list">
+            <li>
+              Avbokning senast 18.00 dagen före ankomst är kostnadsfri för flexibla bokningar.
+            </li>
+            <li>
+              Vid senare avbokning eller utebliven ankomst debiteras första natten.
+            </li>
+            <li>
+              För icke återbetalningsbara erbjudanden sker ingen återbetalning vid avbokning.
+            </li>
+          </ul>
+
+          <h2>In- och utcheckning</h2>
+          <p>
+            Incheckning sker från 15.00 och utcheckning senast 11.00. Sen utcheckning kan erbjudas
+            i mån av tillgång och mot avgift. Vid tidig ankomst hjälper vi gärna till att förvara
+            bagage.
+          </p>
+
+          <h2>Ordning, ansvar och skador</h2>
+          <p>
+            Gäster ansvarar för eventuella skador som uppstår under vistelsen. Rökning inomhus är
+            inte tillåten och medför saneringsavgift. Om ordningsstörning uppstår kan vi avbryta
+            vistelsen utan återbetalning.
+          </p>
+
+          <h2>Husdjur</h2>
+          <p>
+            Utvalda rum är husdjursvänliga. Meddela oss vid bokning så att vi kan tilldela rätt rum.
+            Extra städkostnad kan tillkomma.
+          </p>
+
+          <h2>Force majeure</h2>
+          <p>
+            Vid händelser utanför vår kontroll, såsom naturkatastrofer, myndighetsbeslut eller
+            strejk, kan vi behöva justera eller avboka bokningar. Vi gör då vårt bästa för att
+            erbjuda alternativ.
+          </p>
+
+          <div class="hs-terms-highlight">
+            <p>
+              Har du frågor om villkoren? Kontakta oss på
+              <strong>hej@mygogotraveler.com</strong> eller ring +358 300 870680.
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer class="hs-terms-footer">
+        <div class="hs-terms-footer-inner">
+          <div>Villkor för vistelse på Helsinki Sum Hotel.</div>
+          <div>
+            <a href="privacy.html">Integritetspolicy</a> |
+            <a href="disclaimer.html">Ansvarsfriskrivning</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
