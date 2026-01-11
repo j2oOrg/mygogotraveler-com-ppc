@@ -79,6 +79,21 @@
         font-size: 0.95rem;
       }
 
+      .hs-home-contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        font-size: 0.95rem;
+      }
+
+      .hs-home-contact span {
+        background: rgba(63, 108, 122, 0.12);
+        padding: 6px 12px;
+        border-radius: 999px;
+        font-weight: 600;
+      }
+
       .hs-home-nav a {
         text-decoration: none;
         color: var(--hs-home-ink);
@@ -343,14 +358,17 @@
       <header class="hs-home-header">
         <div class="hs-home-bar">
           <div class="hs-home-logo">Helsinki Sum Hotel</div>
-          <nav class="hs-home-nav">
-            <a href="index.html">Hem</a>
-            <a href="rooms.html">Rumstyper</a>
-            <a href="restaurant.html">Restaurang</a>
-            <a href="terms.html">Villkor</a>
-            <a href="privacy.html">Integritet</a>
-            <a href="disclaimer.html">Ansvar</a>
-          </nav>
+          <div class="hs-home-contact">
+            <span>Telefon: +358 300 870680</span>
+            <nav class="hs-home-nav">
+              <a href="index.html">Hem</a>
+              <a href="rooms.html">Rumstyper</a>
+              <a href="restaurant.html">Restaurang</a>
+              <a href="terms.html">Villkor</a>
+              <a href="privacy.html">Integritet</a>
+              <a href="disclaimer.html">Ansvar</a>
+            </nav>
+          </div>
         </div>
       </header>
 
