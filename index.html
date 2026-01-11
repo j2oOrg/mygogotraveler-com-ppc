@@ -248,6 +248,34 @@
         border-radius: 16px;
       }
 
+      .hs-home-gallery {
+        margin: 36px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+      }
+
+      .hs-home-photo {
+        background: #fff;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid rgba(21, 35, 45, 0.08);
+        box-shadow: 0 12px 26px rgba(21, 35, 45, 0.12);
+      }
+
+      .hs-home-photo img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .hs-home-photo figcaption {
+        padding: 14px 16px 16px;
+        color: var(--hs-home-stone);
+        font-size: 0.9rem;
+      }
+
       .hs-home-footer {
         background: #18242b;
         color: #f2efe8;
@@ -353,6 +381,26 @@
           </aside>
         </section>
 
+        <section>
+          <h2>Incheckning i lugn takt</h2>
+          <p>
+            Vår reception är utformad som en varm ankomstplats med mjuka material och tydlig
+            överblick. Här tar vi hand om incheckning och personliga önskemål utan stress.
+          </p>
+          <div class="hs-home-gallery">
+            <figure class="hs-home-photo">
+              <img
+                src="images/home-team.jpg"
+                alt="Professionellt och vänligt team som välkomnar gäster."
+                loading="lazy"
+                width="1200"
+                height="800"
+              />
+              <figcaption>Vårt team tar emot dig med värme och samlad kompetens.</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section class="hs-home-grid">
           <article class="hs-home-card">
             <h3>Lugna morgnar</h3>
@@ -381,6 +429,46 @@
               Vi har ett studio-rum för kreativa workshops, små strategidagar och intima middagar.
             </p>
           </article>
+        </section>
+
+        <section>
+          <h2>Konferensrum med fokus</h2>
+          <p>
+            Vare sig du samlar teamet för en strategiworkshop eller behöver ett stilla rum för
+            kreativa samtal, har vi ljusa konferensrum med flexibel möblering och god akustik.
+          </p>
+          <div class="hs-home-gallery">
+            <figure class="hs-home-photo">
+              <img
+                src="images/home-conference-1.jpg"
+                alt="Konferensrum med stort bord, stolar och fönster som släpper in dagsljus."
+                loading="lazy"
+                width="1200"
+                height="800"
+              />
+              <figcaption>Stor mötesyta med naturligt ljus och plats för idéarbete.</figcaption>
+            </figure>
+            <figure class="hs-home-photo">
+              <img
+                src="images/home-conference-2.jpg"
+                alt="Mötesrum med presentationstavla och mjuka stolar."
+                loading="lazy"
+                width="1200"
+                height="800"
+              />
+              <figcaption>Utrustat för presentationer, samtal och fokuspass.</figcaption>
+            </figure>
+            <figure class="hs-home-photo">
+              <img
+                src="images/home-conference-3.jpg"
+                alt="Team som arbetar tillsammans runt ett bord i ett konferensrum."
+                loading="lazy"
+                width="1200"
+                height="800"
+              />
+              <figcaption>Smarta möten i en lugn miljö med personlig service.</figcaption>
+            </figure>
+          </div>
         </section>
 
         <section class="hs-home-split">
