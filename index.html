@@ -8,6 +8,28 @@
       name="description"
       content="Ett litet boutiquehotell på Annankatu i Helsingfors med bastu, restaurang och personligt värdskap."
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hotel",
+        "name": "Helsinki Sum Hotel",
+        "description": "Ett litet boutiquehotell på Annankatu i Helsingfors med bastu och restaurang.",
+        "telephone": "+358300870680",
+        "email": "hej@mygogotraveler.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Annankatu 22",
+          "postalCode": "00120",
+          "addressLocality": "Helsinki",
+          "addressCountry": "FI"
+        },
+        "image": [
+          "images/optimized/receptionists-our-people-1200.jpg",
+          "images/optimized/hotel-restaurant-1200.jpg",
+          "images/optimized/bed-room-2-deluxe-1200.jpg"
+        ]
+      }
+    </script>
     <style>
       :root {
         --hs-home-ink: #15232d;
@@ -94,6 +116,25 @@
         font-weight: 600;
       }
 
+      .hs-home-contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .hs-home-contact a:hover {
+        text-decoration: underline;
+      }
+
+      .hs-home-inline-link {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(21, 35, 45, 0.35);
+      }
+
+      .hs-home-inline-link:hover {
+        color: var(--hs-home-sea);
+      }
+
       .hs-home-nav a {
         text-decoration: none;
         color: var(--hs-home-ink);
@@ -121,12 +162,17 @@
         margin-bottom: 60px;
         padding: 26px;
         border-radius: 30px;
-        background: linear-gradient(
+        background-color: #f5f2ec;
+        background-image: linear-gradient(
             120deg,
             rgba(245, 242, 237, 0.94),
             rgba(245, 242, 237, 0.65)
           ),
-          url("images/receptionists%20our%20people.jpg");
+          image-set(
+            url("images/optimized/receptionists-our-people-1200.avif") type("image/avif"),
+            url("images/optimized/receptionists-our-people-1200.webp") type("image/webp"),
+            url("images/optimized/receptionists-our-people-1200.jpg") type("image/jpeg")
+          );
         background-size: cover;
         background-position: center;
       }
@@ -359,7 +405,7 @@
         <div class="hs-home-top">
           <div class="hs-home-logo">Helsinki Sum Hotel</div>
           <div class="hs-home-contact">
-            <span>Telefon: +358 300 870680</span>
+            <span>Telefon: <a href="tel:+358300870680">+358 300 870680</a></span>
             <nav class="hs-home-nav">
               <a href="index.html">Hem</a>
               <a href="rooms.html">Rumstyper</a>
@@ -375,14 +421,14 @@
       <main class="hs-home-main">
         <section class="hs-home-hero">
           <div class="hs-home-hero-card">
-            <h1>Lugnt vid vattnet, nära allt.</h1>
+            <h1>Lugnt nära vattnet, med korta avstånd.</h1>
             <p>
               Helsinki Sum Hotel är ett litet boutiquehotell nära vattnet. Vi gillar mjukt ljus,
-              trä och textilier, och vi sköter detaljerna utan att störa din rytm.
+              trä och textilier, och är noga med detaljerna utan att störa din rytm.
             </p>
             <p>
-              Välj utsikt mot vattnet eller en tyst innergård. Bastun är öppen för gäster, och i
-              restaurangen lagar vi mat efter säsong med något nybakat på sidan.
+              Välj gärna utsikt mot vattnet eller en tyst innergård. Bastun är normalt öppen för
+              gäster, och i restaurangen lagar vi mat efter säsong med något nybakat på sidan.
             </p>
             <div class="hs-home-hero-actions">
               <a class="hs-home-cta-primary" href="rooms.html">Se rum &amp; sviter</a>
@@ -399,8 +445,8 @@
                 bastutid, taxi eller tips i kvarteret - vi löser det.
               </p>
               <p>
-                Kajen ligger runt hörnet och designkvarteren är en kort promenad bort. Vill du
-                cykla lånar vi gärna ut en.
+                Kajen ligger nära och designkvarteren är en kort promenad bort. Vill du cykla
+                lånar vi gärna ut en.
               </p>
             </div>
           </aside>
@@ -414,13 +460,37 @@
           </p>
           <div class="hs-home-gallery">
             <figure class="hs-home-photo">
-              <img
-                src="images/receptionist.jpg"
-                alt="Vänligt receptionsteam som välkomnar gäster."
-                loading="lazy"
-                width="1200"
-                height="800"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/optimized/receptionist-480.avif 480w,
+                    images/optimized/receptionist-800.avif 800w,
+                    images/optimized/receptionist-1200.avif 1200w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/optimized/receptionist-480.webp 480w,
+                    images/optimized/receptionist-800.webp 800w,
+                    images/optimized/receptionist-1200.webp 1200w
+                  "
+                />
+                <img
+                  src="images/optimized/receptionist-800.jpg"
+                  srcset="
+                    images/optimized/receptionist-480.jpg 480w,
+                    images/optimized/receptionist-800.jpg 800w,
+                    images/optimized/receptionist-1200.jpg 1200w
+                  "
+                  sizes="(max-width: 900px) 100vw, 60vw"
+                  alt="Vänligt receptionsteam som välkomnar gäster."
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </picture>
               <figcaption>Du möts av ett team som har tid för din ankomst.</figcaption>
             </figure>
           </div>
@@ -443,7 +513,7 @@
           <article class="hs-home-card">
             <h3>Värme och vatten</h3>
             <p>
-              Bastun är bara för gäster. Vissa kvällar öppnar vi gården för ett snabbt dopp.
+              Bastun är för våra gäster. Vissa kvällar öppnar vi gården för ett snabbt dopp.
             </p>
           </article>
           <article class="hs-home-card">
@@ -457,38 +527,110 @@
         <section>
           <h2>Konferensrum med fokus</h2>
           <p>
-            När du behöver samla teamet ordnar vi ljusa rum med flexibel möblering, bra akustik och
-            det du behöver för att presentera.
+            När du behöver samla teamet kan vi ordna ljusa rum med flexibel möblering, bra akustik
+            och det du behöver för att presentera.
           </p>
           <div class="hs-home-gallery">
             <figure class="hs-home-photo">
-              <img
-                src="images/conference-room-deluxe.jpg"
-                alt="Ljust konferensrum med stort bord och dagsljus."
-                loading="lazy"
-                width="1200"
-                height="800"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/optimized/conference-room-deluxe-480.avif 480w,
+                    images/optimized/conference-room-deluxe-800.avif 800w,
+                    images/optimized/conference-room-deluxe-1200.avif 1200w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/optimized/conference-room-deluxe-480.webp 480w,
+                    images/optimized/conference-room-deluxe-800.webp 800w,
+                    images/optimized/conference-room-deluxe-1200.webp 1200w
+                  "
+                />
+                <img
+                  src="images/optimized/conference-room-deluxe-800.jpg"
+                  srcset="
+                    images/optimized/conference-room-deluxe-480.jpg 480w,
+                    images/optimized/conference-room-deluxe-800.jpg 800w,
+                    images/optimized/conference-room-deluxe-1200.jpg 1200w
+                  "
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="Ljust konferensrum med stort bord och dagsljus."
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </picture>
               <figcaption>Generöst ljus och plats för arbete runt bordet.</figcaption>
             </figure>
             <figure class="hs-home-photo">
-              <img
-                src="images/conference-room-setup.jpg"
-                alt="Mötesrum med presentationstavla och mjuka stolar."
-                loading="lazy"
-                width="1200"
-                height="800"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/optimized/conference-room-setup-480.avif 480w,
+                    images/optimized/conference-room-setup-800.avif 800w,
+                    images/optimized/conference-room-setup-1200.avif 1200w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/optimized/conference-room-setup-480.webp 480w,
+                    images/optimized/conference-room-setup-800.webp 800w,
+                    images/optimized/conference-room-setup-1200.webp 1200w
+                  "
+                />
+                <img
+                  src="images/optimized/conference-room-setup-800.jpg"
+                  srcset="
+                    images/optimized/conference-room-setup-480.jpg 480w,
+                    images/optimized/conference-room-setup-800.jpg 800w,
+                    images/optimized/conference-room-setup-1200.jpg 1200w
+                  "
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="Mötesrum med presentationstavla och mjuka stolar."
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </picture>
               <figcaption>Redo för presentationer och lugna samtal.</figcaption>
             </figure>
             <figure class="hs-home-photo">
-              <img
-                src="images/room%203%20july-2024-rows-seats.jpg"
-                alt="Konferensrum med rader av stolar för föredrag."
-                loading="lazy"
-                width="1200"
-                height="800"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    images/optimized/room-3-july-2024-rows-seats-480.avif 480w,
+                    images/optimized/room-3-july-2024-rows-seats-800.avif 800w,
+                    images/optimized/room-3-july-2024-rows-seats-1200.avif 1200w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    images/optimized/room-3-july-2024-rows-seats-480.webp 480w,
+                    images/optimized/room-3-july-2024-rows-seats-800.webp 800w,
+                    images/optimized/room-3-july-2024-rows-seats-1200.webp 1200w
+                  "
+                />
+                <img
+                  src="images/optimized/room-3-july-2024-rows-seats-800.jpg"
+                  srcset="
+                    images/optimized/room-3-july-2024-rows-seats-480.jpg 480w,
+                    images/optimized/room-3-july-2024-rows-seats-800.jpg 800w,
+                    images/optimized/room-3-july-2024-rows-seats-1200.jpg 1200w
+                  "
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt="Konferensrum med rader av stolar för föredrag."
+                  loading="lazy"
+                  width="1200"
+                  height="800"
+                />
+              </picture>
               <figcaption>Raduppställning för föredrag, utbildning och kickoff.</figcaption>
             </figure>
           </div>
@@ -498,8 +640,8 @@
           <div class="hs-home-note">
             <h2>Hållbarhet som känns i vardagen</h2>
             <p>
-              Vi handlar helst nära: råvaror från kusten, små leverantörer och textilier som håller
-              länge. Vi drar ner på engångsartiklar och använder energisnåla lösningar.
+              Vi försöker handla nära: råvaror från kusten, små leverantörer och textilier som
+              håller länge. Vi drar ner på engångsartiklar och använder energisnåla lösningar.
             </p>
             <p>
               Som gäst kan du välja glesare städning, fylla på vatten i lobbyn och få promenadtips
@@ -509,17 +651,24 @@
           <div>
             <h2>Snabbfakta</h2>
             <ul class="hs-home-list">
-              <li>48 rum och sviter, byggda för tystnad.</li>
+              <li>Cirka 48 rum och sviter, utformade för tystnad.</li>
               <li>Bastu, lugn lounge och ett litet bibliotek med lokal design.</li>
               <li>Restaurang med säsongens meny och kvällsservering.</li>
               <li>Två mötesrum för upp till 18 personer.</li>
-              <li>Systerhotell till Scandic Helsinki Hub.</li>
               <li>Låncyklar och kartor för stadsturer.</li>
             </ul>
             <p>
               <strong>Adress:</strong> Annankatu 22, 00120 Helsinki, Finland<br />
-              <strong>Telefon:</strong> +358 300 870680<br />
-              <strong>E-post:</strong> hej@mygogotraveler.com
+              <strong>Telefon:</strong>
+              <a class="hs-home-inline-link" href="tel:+358300870680">+358 300 870680</a><br />
+              <strong>E-post:</strong>
+              <a class="hs-home-inline-link" href="mailto:hej@mygogotraveler.com"
+                >hej@mygogotraveler.com</a
+              >
+            </p>
+            <p>
+              Betalning sker på plats efter utcheckning. Vi tar inte emot betalning via
+              webbplatsen eller telefon.
             </p>
           </div>
         </section>

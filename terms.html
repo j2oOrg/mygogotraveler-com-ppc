@@ -116,6 +116,16 @@
         color: var(--hs-terms-mocha);
       }
 
+      .hs-terms-inline-link {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(24, 34, 43, 0.35);
+      }
+
+      .hs-terms-inline-link:hover {
+        color: var(--hs-terms-olive);
+      }
+
       .hs-terms-list {
         padding-left: 18px;
         color: var(--hs-terms-mocha);
@@ -194,8 +204,9 @@
 
           <h2>Betalning</h2>
           <p>
-            Vi tar betalt efter att du har checkat ut. Vi tar inte emot betalning via telefon eller
-            på webbplatsen, och vi begär aldrig förskott. Vi accepterar de vanligaste betalkorten.
+            Vi tar betalt efter att du har checkat ut. Vi tar inte emot några betalningar på
+            webbplatsen eller över telefon för din vistelse, och vi begär aldrig förskott. Vi
+            accepterar de vanligaste betalkorten.
           </p>
           <p>
             Vi går igenom betalningen i samband med utcheckning så att det är tydligt vad som
@@ -245,7 +256,11 @@
           <div class="hs-terms-highlight">
             <p>
               Har du frågor om villkoren? Hör av dig till
-              <strong>hej@mygogotraveler.com</strong> eller ring +358 300 870680.
+              <a class="hs-terms-inline-link" href="mailto:hej@mygogotraveler.com"
+                >hej@mygogotraveler.com</a
+              >
+              eller ring
+              <a class="hs-terms-inline-link" href="tel:+358300870680">+358 300 870680</a>.
             </p>
           </div>
         </article>

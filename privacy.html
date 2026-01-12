@@ -116,6 +116,16 @@
         color: #4e5e68;
       }
 
+      .hs-priv-inline-link {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(22, 34, 43, 0.35);
+      }
+
+      .hs-priv-inline-link:hover {
+        color: var(--hs-priv-night);
+      }
+
       .hs-priv-list {
         padding-left: 18px;
         color: #4e5e68;
@@ -230,7 +240,10 @@
           <div class="hs-priv-panel">
             <p>
               Vill du utöva dina rättigheter eller har frågor? Mejla
-              <strong>hej@mygogotraveler.com</strong> eller prata med receptionen.
+              <a class="hs-priv-inline-link" href="mailto:hej@mygogotraveler.com"
+                >hej@mygogotraveler.com</a
+              >
+              eller prata med receptionen.
             </p>
           </div>
         </article>

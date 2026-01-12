@@ -116,6 +116,16 @@
         color: var(--hs-disc-slate);
       }
 
+      .hs-disc-inline-link {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(24, 31, 36, 0.35);
+      }
+
+      .hs-disc-inline-link:hover {
+        color: var(--hs-disc-ember);
+      }
+
       .hs-disc-list {
         padding-left: 18px;
         color: var(--hs-disc-slate);
@@ -226,7 +236,10 @@
           <div class="hs-disc-panel">
             <p>
               Har du frågor om innehållet? Hör av dig till
-              <strong>hej@mygogotraveler.com</strong> eller ring +358 300 870680.
+              <a class="hs-disc-inline-link" href="mailto:hej@mygogotraveler.com"
+                >hej@mygogotraveler.com</a
+              >
+              eller ring <a class="hs-disc-inline-link" href="tel:+358300870680">+358 300 870680</a>.
             </p>
           </div>
         </article>
