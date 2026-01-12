@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Rum och sviter - Helsinki Sum Hotel</title>
     <meta
       name="description"
       content="Tre rumstyper med tyst komfort och nordisk känsla: Sum Compact, Hamnkomfort och Horisontsvit."
-    />
+    >
     <style>
+      /* Grund, typografi och färger. */
       :root {
         --hs-rooms-ink: #171d24;
         --hs-rooms-cloud: #f2f0ea;
@@ -44,6 +45,7 @@
         pointer-events: none;
       }
 
+      /* Header och navigation. */
       .hs-rooms-header {
         background: rgba(242, 240, 234, 0.9);
         backdrop-filter: blur(8px);
@@ -85,6 +87,7 @@
         color: #fff;
       }
 
+      /* Huvudlayout och hero. */
       .hs-rooms-main {
         max-width: 1100px;
         margin: 0 auto;
@@ -127,6 +130,7 @@
         border-left: 4px solid var(--hs-rooms-amber);
       }
 
+      /* Kort för rumstyper. */
       .hs-rooms-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -177,6 +181,7 @@
         border-radius: 16px;
       }
 
+      /* Rumbilder och galleri. */
       .hs-rooms-section {
         margin: 48px 0 10px;
       }
@@ -209,12 +214,14 @@
         font-size: 0.9rem;
       }
 
+      /* Detaljer och tillval. */
       .hs-rooms-split {
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 24px;
       }
 
+      /* Sidfot. */
       .hs-rooms-footer {
         background: #171d24;
         color: #f2f0ea;
@@ -234,6 +241,7 @@
         text-decoration: none;
       }
 
+      /* Animationer. */
       @keyframes hs-rooms-rise {
         from {
           opacity: 0;
@@ -245,6 +253,7 @@
         }
       }
 
+      /* Responsivt. */
       @media (max-width: 900px) {
         .hs-rooms-hero {
           grid-template-columns: 1fr;
@@ -258,6 +267,7 @@
   </head>
   <body>
     <div class="hs-rooms-wrap">
+      <!-- Toppnavigering. -->
       <header class="hs-rooms-header">
         <div class="hs-rooms-top">
           <div class="hs-rooms-brand">Helsinki Sum Hotel</div>
@@ -273,6 +283,7 @@
       </header>
 
       <main class="hs-rooms-main">
+        <!-- Hero och standarddetaljer. -->
         <section class="hs-rooms-hero">
           <div class="hs-rooms-hero-box">
             <h1>Tre rumstyper, tre sätt att komma till ro.</h1>
@@ -301,6 +312,7 @@
           </div>
         </section>
 
+        <!-- Rumbilder. -->
         <section class="hs-rooms-section">
           <h2>Rumbilder</h2>
           <p>
@@ -311,20 +323,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/single-room-480.avif 480w,
                     images/optimized/single-room-800.avif 800w,
                     images/optimized/single-room-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/single-room-480.webp 480w,
                     images/optimized/single-room-800.webp 800w,
                     images/optimized/single-room-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/single-room-800.jpg"
                   srcset="
@@ -337,7 +351,7 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Sum Compact - enkelt, tyst och precis lagom.</figcaption>
             </figure>
@@ -345,20 +359,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/twinroom-480.avif 480w,
                     images/optimized/twinroom-800.avif 800w,
                     images/optimized/twinroom-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/twinroom-480.webp 480w,
                     images/optimized/twinroom-800.webp 800w,
                     images/optimized/twinroom-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/twinroom-800.jpg"
                   srcset="
@@ -371,7 +387,7 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Hamnkomfort - mer yta och plats för att andas ut.</figcaption>
             </figure>
@@ -379,20 +395,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/bed-room-2-deluxe-480.avif 480w,
                     images/optimized/bed-room-2-deluxe-800.avif 800w,
                     images/optimized/bed-room-2-deluxe-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/bed-room-2-deluxe-480.webp 480w,
                     images/optimized/bed-room-2-deluxe-800.webp 800w,
                     images/optimized/bed-room-2-deluxe-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/bed-room-2-deluxe-800.jpg"
                   srcset="
@@ -405,14 +423,15 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Horisontsvit - extra rymlig med egen loungekänsla.</figcaption>
             </figure>
           </div>
         </section>
 
-        <section class="hs-rooms-grid">
+        <!-- Rumskort med fakta. -->
+        <div class="hs-rooms-grid">
           <article class="hs-rooms-card">
             <span class="hs-rooms-tag">Sum Compact</span>
             <h2>Intim, smart och stillsam</h2>
@@ -443,8 +462,9 @@
             <p><strong>Storlek:</strong> 42-50 m2 | <strong>Säng:</strong> 180 cm</p>
             <p><strong>Passar för:</strong> jubileum, arbete på distans eller en lugn lyxhelg.</p>
           </article>
-        </section>
+        </div>
 
+        <!-- Detaljer och tillval. -->
         <section class="hs-rooms-split">
           <div class="hs-rooms-hero-box">
             <h2>Rumsdetaljer att se fram emot</h2>
@@ -471,6 +491,7 @@
         </section>
       </main>
 
+      <!-- Sidfot. -->
       <footer class="hs-rooms-footer">
         <div class="hs-rooms-footer-inner">
           <div>Rum och sviter på Helsinki Sum Hotel.</div>
@@ -484,3 +505,4 @@
     </div>
   </body>
 </html>
+

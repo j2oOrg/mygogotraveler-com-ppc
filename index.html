@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Helsinki Sum Hotel - Litet boutiquehotell i Helsingfors</title>
     <meta
       name="description"
       content="Ett litet boutiquehotell på Annankatu i Helsingfors med bastu, restaurang och personligt värdskap."
-    />
+    >
+    <!-- Strukturdata för sökmotorer (Hotel). -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -31,6 +32,7 @@
       }
     </script>
     <style>
+      /* Grund, typografi och färger. */
       :root {
         --hs-home-ink: #15232d;
         --hs-home-cream: #f2efe8;
@@ -68,6 +70,7 @@
         pointer-events: none;
       }
 
+      /* Header och navigation. */
       .hs-home-header {
         position: sticky;
         top: 0;
@@ -148,6 +151,7 @@
         color: #fff;
       }
 
+      /* Huvudlayout och hero. */
       .hs-home-main {
         max-width: 1100px;
         margin: 0 auto;
@@ -168,11 +172,7 @@
             rgba(245, 242, 237, 0.94),
             rgba(245, 242, 237, 0.65)
           ),
-          image-set(
-            url("images/optimized/receptionists-our-people-1200.avif") type("image/avif"),
-            url("images/optimized/receptionists-our-people-1200.webp") type("image/webp"),
-            url("images/optimized/receptionists-our-people-1200.jpg") type("image/jpeg")
-          );
+          url("images/optimized/receptionists-our-people-1200.jpg");
         background-size: cover;
         background-position: center;
       }
@@ -262,6 +262,7 @@
         line-height: 1.7;
       }
 
+      /* Kort och innehållsblock. */
       .hs-home-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -319,6 +320,7 @@
         border-radius: 16px;
       }
 
+      /* Bildgallerier. */
       .hs-home-gallery {
         margin: 36px 0 10px;
         display: grid;
@@ -347,6 +349,7 @@
         font-size: 0.9rem;
       }
 
+      /* Sidfot. */
       .hs-home-footer {
         background: #18242b;
         color: #f2efe8;
@@ -366,6 +369,7 @@
         text-decoration: none;
       }
 
+      /* Animationer. */
       @keyframes hs-home-rise {
         from {
           opacity: 0;
@@ -388,19 +392,38 @@
         }
       }
 
+      /* Responsivt. */
       @media (max-width: 900px) {
         .hs-home-hero {
           grid-template-columns: 1fr;
+          background-image: linear-gradient(
+              120deg,
+              rgba(245, 242, 237, 0.94),
+              rgba(245, 242, 237, 0.65)
+            ),
+            url("images/optimized/receptionists-our-people-800.jpg");
         }
 
         .hs-home-split {
           grid-template-columns: 1fr;
         }
       }
+
+      @media (max-width: 600px) {
+        .hs-home-hero {
+          background-image: linear-gradient(
+              120deg,
+              rgba(245, 242, 237, 0.94),
+              rgba(245, 242, 237, 0.65)
+            ),
+            url("images/optimized/receptionists-our-people-480.jpg");
+        }
+      }
     </style>
   </head>
   <body class="hs-home-body">
     <div class="hs-home-wrap">
+      <!-- Toppnavigering och kontakt. -->
       <header class="hs-home-header">
         <div class="hs-home-top">
           <div class="hs-home-logo">Helsinki Sum Hotel</div>
@@ -419,6 +442,7 @@
       </header>
 
       <main class="hs-home-main">
+        <!-- Hero med introduktion och signatur. -->
         <section class="hs-home-hero">
           <div class="hs-home-hero-card">
             <h1>Lugnt nära vattnet, med korta avstånd.</h1>
@@ -452,6 +476,7 @@
           </aside>
         </section>
 
+        <!-- Incheckning och receptionsbild. -->
         <section>
           <h2>Incheckning i lugn takt</h2>
           <p>
@@ -463,20 +488,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, 60vw"
                   srcset="
                     images/optimized/receptionist-480.avif 480w,
                     images/optimized/receptionist-800.avif 800w,
                     images/optimized/receptionist-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, 60vw"
                   srcset="
                     images/optimized/receptionist-480.webp 480w,
                     images/optimized/receptionist-800.webp 800w,
                     images/optimized/receptionist-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/receptionist-800.jpg"
                   srcset="
@@ -489,14 +516,15 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Du möts av ett team som har tid för din ankomst.</figcaption>
             </figure>
           </div>
         </section>
 
-        <section class="hs-home-grid">
+        <!-- Snabbt om hotellet (features). -->
+        <div class="hs-home-grid">
           <article class="hs-home-card">
             <h3>Lugna morgnar</h3>
             <p>
@@ -522,8 +550,9 @@
               Ett studio-rum för workshops, strategisamtal och små middagar.
             </p>
           </article>
-        </section>
+        </div>
 
+        <!-- Konferensrum och bilder. -->
         <section>
           <h2>Konferensrum med fokus</h2>
           <p>
@@ -535,20 +564,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/conference-room-deluxe-480.avif 480w,
                     images/optimized/conference-room-deluxe-800.avif 800w,
                     images/optimized/conference-room-deluxe-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/conference-room-deluxe-480.webp 480w,
                     images/optimized/conference-room-deluxe-800.webp 800w,
                     images/optimized/conference-room-deluxe-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/conference-room-deluxe-800.jpg"
                   srcset="
@@ -561,7 +592,7 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Generöst ljus och plats för arbete runt bordet.</figcaption>
             </figure>
@@ -569,20 +600,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/conference-room-setup-480.avif 480w,
                     images/optimized/conference-room-setup-800.avif 800w,
                     images/optimized/conference-room-setup-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/conference-room-setup-480.webp 480w,
                     images/optimized/conference-room-setup-800.webp 800w,
                     images/optimized/conference-room-setup-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/conference-room-setup-800.jpg"
                   srcset="
@@ -595,7 +628,7 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Redo för presentationer och lugna samtal.</figcaption>
             </figure>
@@ -603,20 +636,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/room-3-july-2024-rows-seats-480.avif 480w,
                     images/optimized/room-3-july-2024-rows-seats-800.avif 800w,
                     images/optimized/room-3-july-2024-rows-seats-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/room-3-july-2024-rows-seats-480.webp 480w,
                     images/optimized/room-3-july-2024-rows-seats-800.webp 800w,
                     images/optimized/room-3-july-2024-rows-seats-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/room-3-july-2024-rows-seats-800.jpg"
                   srcset="
@@ -629,13 +664,14 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Raduppställning för föredrag, utbildning och kickoff.</figcaption>
             </figure>
           </div>
         </section>
 
+        <!-- Hållbarhet och snabbfakta. -->
         <section class="hs-home-split">
           <div class="hs-home-note">
             <h2>Hållbarhet som känns i vardagen</h2>
@@ -658,9 +694,9 @@
               <li>Låncyklar och kartor för stadsturer.</li>
             </ul>
             <p>
-              <strong>Adress:</strong> Annankatu 22, 00120 Helsinki, Finland<br />
+              <strong>Adress:</strong> Annankatu 22, 00120 Helsinki, Finland<br >
               <strong>Telefon:</strong>
-              <a class="hs-home-inline-link" href="tel:+358300870680">+358 300 870680</a><br />
+              <a class="hs-home-inline-link" href="tel:+358300870680">+358 300 870680</a><br >
               <strong>E-post:</strong>
               <a class="hs-home-inline-link" href="mailto:hej@mygogotraveler.com"
                 >hej@mygogotraveler.com</a
@@ -674,6 +710,7 @@
         </section>
       </main>
 
+      <!-- Sidfot. -->
       <footer class="hs-home-footer">
         <div class="hs-home-footer-inner">
           <div>Helsinki Sum Hotel - litet, lugnt och personligt.</div>
@@ -687,3 +724,4 @@
     </div>
   </body>
 </html>
+

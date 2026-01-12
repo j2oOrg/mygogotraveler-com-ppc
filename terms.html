@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Allmänna villkor - Helsinki Sum Hotel</title>
     <meta
       name="description"
       content="Villkor för bokning och vistelse, inklusive betalning efter utcheckning, avbokning och ansvar."
-    />
+    >
     <style>
+      /* Grund, typografi och färger. */
       :root {
         --hs-terms-ink: #18222b;
         --hs-terms-paper: #f4f1ea;
@@ -43,6 +44,7 @@
         pointer-events: none;
       }
 
+      /* Header och navigation. */
       .hs-terms-header {
         background: rgba(244, 241, 234, 0.92);
         backdrop-filter: blur(8px);
@@ -85,6 +87,7 @@
         color: #fff;
       }
 
+      /* Huvudkort för villkorstext. */
       .hs-terms-main {
         max-width: 1000px;
         margin: 0 auto;
@@ -126,6 +129,7 @@
         color: var(--hs-terms-olive);
       }
 
+      /* Markerad informationsruta. */
       .hs-terms-list {
         padding-left: 18px;
         color: var(--hs-terms-mocha);
@@ -139,6 +143,7 @@
         margin-top: 20px;
       }
 
+      /* Sidfot. */
       .hs-terms-footer {
         background: #18222b;
         color: #f4f1ea;
@@ -158,6 +163,7 @@
         text-decoration: none;
       }
 
+      /* Animationer. */
       @keyframes hs-terms-fade {
         from {
           opacity: 0;
@@ -172,6 +178,7 @@
   </head>
   <body>
     <div class="hs-terms-frame">
+      <!-- Toppnavigering. -->
       <header class="hs-terms-header">
         <div class="hs-terms-topline">
           <div class="hs-terms-name">Helsinki Sum Hotel</div>
@@ -186,6 +193,7 @@
         </div>
       </header>
 
+      <!-- Villkorstext. -->
       <main class="hs-terms-main">
         <article class="hs-terms-card">
           <h1>Allmänna villkor</h1>
@@ -266,6 +274,7 @@
         </article>
       </main>
 
+      <!-- Sidfot. -->
       <footer class="hs-terms-footer">
         <div class="hs-terms-footer-inner">
           <div>Villkor för vistelse på Helsinki Sum Hotel.</div>
@@ -278,3 +287,4 @@
     </div>
   </body>
 </html>
+

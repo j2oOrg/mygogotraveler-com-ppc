@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <title>Sum Mat &amp; Kök - Helsinki Sum Hotel</title>
     <meta
       name="description"
       content="Säsongsmeny med nordiska smaker, frukost och kvällsservering i hotellets egen restaurang i Helsingfors."
-    />
+    >
     <style>
+      /* Grund, typografi och färger. */
       :root {
         --hs-rest-ink: #192028;
         --hs-rest-ivory: #f5f1ea;
@@ -45,6 +46,7 @@
         pointer-events: none;
       }
 
+      /* Header och navigation. */
       .hs-rest-header {
         background: rgba(245, 241, 234, 0.9);
         backdrop-filter: blur(8px);
@@ -87,6 +89,7 @@
         color: #fff;
       }
 
+      /* Huvudlayout och hero. */
       .hs-rest-main {
         max-width: 1100px;
         margin: 0 auto;
@@ -130,6 +133,7 @@
         border-left: 4px solid var(--hs-rest-forest);
       }
 
+      /* Sektioner och menyer. */
       .hs-rest-section {
         margin-top: 46px;
       }
@@ -179,6 +183,7 @@
         border-radius: 16px;
       }
 
+      /* Bildgalleri. */
       .hs-rest-gallery {
         margin-top: 22px;
         display: grid;
@@ -217,6 +222,7 @@
         color: var(--hs-rest-forest);
       }
 
+      /* Sidfot. */
       .hs-rest-footer {
         background: #1a2024;
         color: #f5f1ea;
@@ -236,6 +242,7 @@
         text-decoration: none;
       }
 
+      /* Animationer. */
       @keyframes hs-rest-float {
         from {
           opacity: 0;
@@ -247,6 +254,7 @@
         }
       }
 
+      /* Responsivt. */
       @media (max-width: 900px) {
         .hs-rest-hero {
           grid-template-columns: 1fr;
@@ -256,6 +264,7 @@
   </head>
   <body>
     <div class="hs-rest-shell">
+      <!-- Toppnavigering. -->
       <header class="hs-rest-header">
         <div class="hs-rest-topline">
           <div class="hs-rest-mark">Helsinki Sum Hotel</div>
@@ -271,6 +280,7 @@
       </header>
 
       <main class="hs-rest-main">
+        <!-- Hero med restaurangens inriktning. -->
         <section class="hs-rest-hero">
           <div class="hs-rest-hero-card">
             <h1>Sum Mat &amp; Kök</h1>
@@ -301,6 +311,7 @@
           </div>
         </section>
 
+        <!-- Bildgalleri. -->
         <section class="hs-rest-section">
           <h2>Smakbilder från köket</h2>
           <p>
@@ -312,20 +323,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/hotel-restaurant-480.avif 480w,
                     images/optimized/hotel-restaurant-800.avif 800w,
                     images/optimized/hotel-restaurant-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/hotel-restaurant-480.webp 480w,
                     images/optimized/hotel-restaurant-800.webp 800w,
                     images/optimized/hotel-restaurant-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/hotel-restaurant-800.jpg"
                   srcset="
@@ -338,7 +351,7 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Vår restaurangmiljö är varm, inbjudande och stilla.</figcaption>
             </figure>
@@ -346,20 +359,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/rest-fish-480.avif 480w,
                     images/optimized/rest-fish-800.avif 800w,
                     images/optimized/rest-fish-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/rest-fish-480.webp 480w,
                     images/optimized/rest-fish-800.webp 800w,
                     images/optimized/rest-fish-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/rest-fish-800.jpg"
                   srcset="
@@ -372,7 +387,7 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Serverad het, med örter och mjuka grönsaker.</figcaption>
             </figure>
@@ -380,20 +395,22 @@
               <picture>
                 <source
                   type="image/avif"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/rest-dessert-480.avif 480w,
                     images/optimized/rest-dessert-800.avif 800w,
                     images/optimized/rest-dessert-1200.avif 1200w
                   "
-                />
+                >
                 <source
                   type="image/webp"
+                  sizes="(max-width: 900px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   srcset="
                     images/optimized/rest-dessert-480.webp 480w,
                     images/optimized/rest-dessert-800.webp 800w,
                     images/optimized/rest-dessert-1200.webp 1200w
                   "
-                />
+                >
                 <img
                   src="images/optimized/rest-dessert-800.jpg"
                   srcset="
@@ -406,13 +423,14 @@
                   loading="lazy"
                   width="1200"
                   height="800"
-                />
+                >
               </picture>
               <figcaption>Efterrätt med bär, vanilj och len textur.</figcaption>
             </figure>
           </div>
         </section>
 
+        <!-- Exempelmeny. -->
         <section class="hs-rest-section">
           <h2>Exempel från kvällsmenyn</h2>
           <div class="hs-rest-grid">
@@ -440,6 +458,7 @@
           </div>
         </section>
 
+        <!-- Frukost och kvällsservering. -->
         <section class="hs-rest-section">
           <h2>Frukost &amp; kvällsservering</h2>
           <div class="hs-rest-grid">
@@ -468,6 +487,7 @@
           </div>
         </section>
 
+        <!-- Bordsbokning. -->
         <section class="hs-rest-section">
           <h2>Bordsbokning</h2>
           <p>
@@ -479,13 +499,14 @@
             <strong>E-post:</strong>
             <a class="hs-rest-inline-link" href="mailto:hej@mygogotraveler.com"
               >hej@mygogotraveler.com</a
-            ><br />
+            ><br >
             <strong>Telefon:</strong>
             <a class="hs-rest-inline-link" href="tel:+358300870680">+358 300 870680</a>
           </p>
         </section>
       </main>
 
+      <!-- Sidfot. -->
       <footer class="hs-rest-footer">
         <div class="hs-rest-footer-inner">
           <div>Sum Mat &amp; Kök - vår restaurang på Helsinki Sum Hotel.</div>
@@ -499,3 +520,4 @@
     </div>
   </body>
 </html>
+
